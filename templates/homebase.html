@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>{% block title %} Seninbu{% endblock %}</title>
+      <meta name="keywords" content="{% block keywords %} Anasayfa anahtar kelimeler {% endblock %}">
+      <meta name="description" content="{% block description %} Anasayfa kısa açıklama {% endblock %}">
+    <meta name="author" content="D-THEMES">
+    {% load static %}
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'images/icons/favicon.png'%}">
+    <!-- Preload Font -->
+    <link rel="preload" href="{% static 'fonts/riode.ttf?5gap68'%}" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="{% static 'vendor/fontawesome-free/webfonts/fa-solid-900.woff2'%}" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" href="{% static 'vendor/fontawesome-free/webfonts/fa-brands-400.woff2'%}" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <script>
+        WebFontConfig = {
+            google: { families: [ 'Poppins:300,400,500,600,700,800' ] }
+        };
+        ( function ( d ) {
+            var wf = d.createElement( 'script' ), s = d.scripts[ 0 ];
+            wf.src = '{% static 'js/webfont.js' %}';
+            wf.async = true;
+            s.parentNode.insertBefore( wf, s );
+        } )( document );
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/fontawesome-free/css/all.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.min.css'%}">
+
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/magnific-popup/magnific-popup.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/owl-carousel/owl.carousel.min.css'%}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/sticky-icon/stickyicon.css'%}">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/demo2.min.css'%}">
+
+    {% block head %}{% endblock %}
+</head>
+<body class="home">
+    <div class="page-wrapper">
+        {% include 'header.html' %}
+        {% block body %}{% endblock %}
+        {% include 'footer.html' %}
+    </div>
+    {% include 'sticky-footer.html' %}
+    {% block footer %}{% endblock %}
+</body>
+</html>
