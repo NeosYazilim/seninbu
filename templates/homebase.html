@@ -23,11 +23,12 @@
         };
         ( function ( d ) {
             var wf = d.createElement( 'script' ), s = d.scripts[ 0 ];
-            wf.src = '{% static 'js/webfont.js' %}';
+            wf.src = '{% static 'js/webfont.js'%}';
             wf.async = true;
             s.parentNode.insertBefore( wf, s );
         } )( document );
     </script>
+
 
 
     <link rel="stylesheet" type="text/css" href="{% static 'vendor/fontawesome-free/css/all.min.css'%}">
@@ -40,7 +41,6 @@
     <link rel="stylesheet" type="text/css" href="{% static 'vendor/sticky-icon/stickyicon.css'%}">
 
     <!-- Main CSS File -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/demo2.min.css'%}">
 
     {% block head %}{% endblock %}
 </head>

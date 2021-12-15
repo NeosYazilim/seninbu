@@ -1,13 +1,15 @@
 {% extends "homebase.html" %}
 {% load static %}
-
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css'%}">
+{% endblock  %}
 {% block title %}İndex Sayfası{% endblock  %}
 {% block keywords %}İndex Sayfası anahtar kelimeler{% endblock  %}
 {% block description %}İndex sayfası açıklama{% endblock %}
 {% block body %}
 <main class="main">
 	<div class="page-header"
-		style="background-image: url('{% static'images/shop/page-header-back.jpg'%}'); background-color: #3C63A4;">
+		style="background-image: url('{% static 'images/shop/page-header-back.jpg'%}'); background-color: #3C63A4;">
 		<h1 class="page-title">Riode Shop</h1>
 		<ul class="breadcrumb">
 			<li><a href="demo1.html"><i class="d-icon-home"></i></a></li>
@@ -145,7 +147,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/1.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/1.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-label-group">
 										<label class="product-label label-new">new</label>
@@ -187,7 +189,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/2.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/2.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-label-group">
 										<label class="product-label label-sale">25% OFF</label>
@@ -228,7 +230,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/3.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/3.jpg'%}" alt="product" width="280" height="315">
 									</a>
 
 									<div class="product-action-vertical">
@@ -267,7 +269,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/4.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/4.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-action-vertical">
 										<a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
@@ -305,7 +307,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/5.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/5.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-action-vertical">
 										<a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
@@ -343,7 +345,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/6.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/6.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-label-group">
 										<label class="product-label label-sale">20% off</label>
@@ -384,7 +386,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/7.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/7.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-label-group">
 										<label class="product-label label-new">new</label>
@@ -425,7 +427,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/8.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/8.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-action-vertical">
 										<a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
@@ -463,7 +465,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/9.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/9.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-action-vertical">
 										<a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
@@ -501,7 +503,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/10.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/10.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-label-group">
 										<label class="product-label label-new">new</label>
@@ -542,7 +544,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/11.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/11.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-action-vertical">
 										<a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
@@ -580,7 +582,7 @@
 							<div class="product">
 								<figure class="product-media">
 									<a href="product.html">
-										<img src="{% static'images/shop/12.jpg'%}" alt="product" width="280" height="315">
+										<img src="{% static 'images/shop/12.jpg'%}" alt="product" width="280" height="315">
 									</a>
 									<div class="product-label-group">
 										<label class="product-label label-sale">8% off</label>
@@ -646,3 +648,15 @@
 	
 </main>
 {% endblock  %}
+{% block footer %}
+        <!-- Plugins JS File -->
+	<script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+	<script src="{% static 'vendor/sticky/sticky.min.js'%}"></script>
+	<script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+	<script src="{% static 'vendor/elevatezoom/jquery.elevatezoom.min.js'%}"></script>
+	<script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js'%}"></script>
+	<script src="{% static 'vendor/owl-carousel/owl.carousel.min.js'%}"></script>
+	<script src="{% static 'vendor/nouislider/nouislider.min.js'%}"></script>
+	<!-- Main JS File -->
+	<script src="{% static 'js/main.min.js'%}"></script>
+{% endblock %}

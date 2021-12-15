@@ -1,6 +1,8 @@
 {% extends "homebase.html" %}
 {% load static %}
-
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css'%}">
+{% endblock  %}
 {% block title %}İndex Sayfası{% endblock  %}
 {% block keywords %}İndex Sayfası anahtar kelimeler{% endblock  %}
 {% block description %}İndex sayfası açıklama{% endblock %}
@@ -14,7 +16,7 @@
             </ul>
         </div>
     </nav>
-    <div class="page-header" style="background-image: url(images/page-header/faq.jpg)">
+    <div class="page-header" style="background-image: url({% static 'images/page-header/faq.jpg'%})">
         <h3 class="page-subtitle lh-1">Frequently</h3>
         <h1 class="page-title font-weight-bold text-capitalize lh-1">Asked Questions</h1>
     </div>
@@ -304,3 +306,14 @@
 
 </main>
 {% endblock  %}
+{% block footer %}
+        <!-- Plugins JS File -->
+    <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'vendor/parallax/parallax.min.js'%}"></script>
+    <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'vendor/elevatezoom/jquery.elevatezoom.min.js'%}"></script>
+    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js'%}"></script>
+    <script src="{% static 'vendor/owl-carousel/owl.carousel.min.js'%}"></script>
+    <!-- Main JS File -->
+    <script src="{% static 'js/main.min.js'%}"></script>
+{% endblock %}

@@ -1,6 +1,8 @@
 {% extends "homebase.html" %}
 {% load static %}
-
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css'%}">
+{% endblock  %}
 {% block title %}İndex Sayfası{% endblock  %}
 {% block keywords %}İndex Sayfası anahtar kelimeler{% endblock  %}
 {% block description %}İndex sayfası açıklama{% endblock %}
@@ -235,3 +237,11 @@
     </div>
 </main>
 {% endblock  %}
+{% block footer %}
+    <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'vendor/jquery.count-to/jquery-numerator.min.js'%}"></script>
+    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js'%}"></script>
+    <script src="{% static 'vendor/owl-carousel/owl.carousel.min.js'%}"></script>
+    <!-- Main JS File -->
+    <script src="{% static 'js/main.min.js'%}"></script>
+{% endblock %}

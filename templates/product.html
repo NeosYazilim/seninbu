@@ -1,6 +1,8 @@
 {% extends "homebase.html" %}
 {% load static %}
-
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css'%}">
+{% endblock  %}
 {% block title %}İndex Sayfası{% endblock  %}
 {% block keywords %}İndex Sayfası anahtar kelimeler{% endblock  %}
 {% block description %}İndex sayfası açıklama{% endblock %}
@@ -854,4 +856,18 @@
 	</div>
 	
 </main>
+{% endblock %}
+{% block footer %}
+        <!-- Plugins JS File -->
+	<script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+	<script src="{% static 'vendor/sticky/sticky.min.js'%}"></script>
+	<script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+	<script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js'%}"></script>
+	<script src="{% static 'vendor/owl-carousel/owl.carousel.min.js'%}"></script>
+	<script src="{% static 'vendor/elevatezoom/jquery.elevatezoom.min.js'%}"></script>
+	<script src="{% static 'vendor/photoswipe/photoswipe.min.js'%}"></script>
+	<script src="{% static 'vendor/photoswipe/photoswipe-ui-default.min.js'%}"></script>
+
+	<!-- Main JS File -->
+	<script src="{% static 'js/main.min.js'%}"></script>
 {% endblock %}
